@@ -1,0 +1,73 @@
+body{
+    padding-top: 50px;
+    background: #BDB76B;
+    
+}
+button.first{
+    
+      background-color: #4CAF50;
+      color: white;
+      font-size: 150%;
+      margin: 8px 0;
+      border: none;
+      cursor: pointer;
+      padding: 7px 40px;
+      width: 15%;
+      
+      
+}
+button.first:hover{
+    opacity: 0.8;
+}
+label.first{
+    font-size: 150%;
+    
+}
+input.first{
+    padding: 7px 30px;
+}
+tr.user{
+    font-size: 150%;
+  
+}
+table.user{
+    border-spacing: 10;
+        
+}
+input.sign{
+    padding: 7px 30px;
+}
+label.sign{
+    text-align: top;
+}
+table.sign{
+    font-size: 150%;
+    
+}
+table.user{
+    border-spacing: 15px;
+}
+
+textarea.edit{
+   width: 65%;
+   padding: 40px;   
+}
+#myInput {
+    background-image: url('/css/searchicon.png'); 
+    background-position: 10px 12px; 
+    background-repeat: no-repeat; 
+    font-size: 16px; 
+    padding: 12px 20px 12px 40px; 
+    border: 1px solid #ddd; 
+    margin-bottom: 12px; }
+
+button.user{
+    background-color: #4CAF50;
+    color: white;
+    font-size: 150%;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    padding: 7px 40px;
+    width: 25%;
+}

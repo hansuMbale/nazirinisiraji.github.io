@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <title>userpage</title>
+    <script>
+        function myFunction() {
+
+            var input, filter, table, tr, td, i;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("myTable");
+            tr = table.getElementsByTagName("tr");
+
+
+            for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[2];
+                if (td) {
+                    if (td.innerHTML.toUpperCase().indexOf(filter) > 0) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
+        }</script>
+</head>
+
+<center>
+
+    <body>
+        <h1>List of requests</h1>
+        <div>
+            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for requests..">
+            <table class="user">
+                <tr class="user">
+                    <td>
+                        <label>Name</label>
+                    </td>
+                    <td>
+                        <label>Email</label>
+                    </td>
+                    <td>
+                        <label>Compuetr ID</label>
+                    </td>
+                    <td>
+                        <label>Department</label>
+                    </td>
+                    <td>
+                        <label>Description</label>
+                    </td>
+                    <td>
+                        <label>Arrove</label>
+                    </td>
+                    <td>
+                        <label>Reject</label>
+                    </td>
+                    <td>
+                        <label>Resolve</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="adminmaintainance.html">
+                            <output>Nazirini Siraji</output>
+                    </td>
+                    <td>
+                        <output>nazirinisiarji@gmail.com</output>
+                    </td>
+                    <td>
+                        <output> AA769</output>
+                    </td>
+                    <td>
+                        <output>Human Resource</output>
+                    </td>
+                    <td>
+                        <output>Keyboard </output>
+                    </td>
+                    <td>
+                        <input type="checkbox">
+                    </td>
+                    <td>
+                        <input type="checkbox">
+                        <td>
+                            <input type="checkbox">
+                        </td>
+                        </a>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <br>
+    </body>
+</center>
+
+</html>
